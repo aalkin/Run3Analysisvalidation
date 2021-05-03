@@ -4,14 +4,14 @@
 # Input specification for runtest.sh
 # (Modifies input parameters.)
 
-INPUT_CASE=2            # Input case
+INPUT_CASE=9            # Input case
 
-NFILESMAX=1             # Maximum number of processed input files. (Set to -0 to process all; to -N to process all but the last N files.)
+NFILESMAX=-0            # Maximum number of processed input files. (Set to -0 to process all; to -N to process all but the last N files.)
 
 # Number of input files per job (Automatic optimisation on if < 1.)
 NFILESPERJOB_CONVERT=0  # Conversion
 NFILESPERJOB_ALI=0      # AliPhysics
-NFILESPERJOB_O2=1       # O2
+NFILESPERJOB_O2=-1      # O2
 
 # Maximum number of simultaneously running O2 jobs
 NJOBSPARALLEL_O2=$(python3 -c "print(min(10, round($(nproc) / 2)))")
@@ -86,4 +86,18 @@ case $INPUT_CASE in
     JSON="$JSONRUN5_HF"
     ISINPUTO2=1
     ISMC=1;;
+  8)
+	  INPUT_LABEL="Lc dedicated"
+	  INPUT_DIR="/home/mmazzill/pp14TeV_ccbarLcpKpi_10M_sc2_26032021"
+	  INPUT_FILES="AODRun5.*.root"
+	  JSON="$JSONRUN5"
+	  ISINPUTO2=1
+	  ISMC=1;;
+  9)
+	  INPUT_LABEL="Xic dedicated"
+	  INPUT_DIR="/home/aalkin/xic_2"
+	  INPUT_FILES="AODRun5.*.root"
+	  JSON="$JSONRUN5"
+	  ISINPUTO2=1
+	  ISMC=1;;
 esac
