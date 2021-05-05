@@ -5,6 +5,7 @@ options:
 workflows:
 
   # Event selection
+
   o2-analysis-timestamp:
     activate: no
     options:
@@ -15,7 +16,7 @@ workflows:
     options:
       mc: "--isMC 1"
 
-      # Skimming
+  # Skimming
 
   o2-analysis-hf-track-index-skims-creator:
     activate: no
@@ -145,3 +146,4 @@ workflows:
 
   o2-analysis-pid-tof-beta:
     activate: no
+    options: "--pid-el 1 --pid-mu 1 --pid-pi 1 --pid-ka 1 --pid-pr 1"
