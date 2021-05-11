@@ -146,4 +146,3 @@ workflows:
 
   o2-analysis-pid-tof-beta:
     activate: no
-    options: "--pid-el 1 --pid-mu 1 --pid-pi 1 --pid-ka 1 --pid-pr 1"
