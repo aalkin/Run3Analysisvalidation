@@ -83,10 +83,10 @@
             "mInvMassDsToPiKKMax": "2.18",
             "mCPADsToPiKKMin": "0.94",
             "mDecLenDsToPiKKMin": "0.02",
-            "mPtXicToPKPiMin": "4.",
+            "mPtXicToPKPiMin": "0.",
             "mInvMassXicToPKPiMin": "2.10",
             "mInvMassXicToPKPiMax": "2.80",
-            "mCPAXicToPKPiMin": "-2.",
+            "mCPAXicToPKPiMin": "0.95",
             "mDecLenXicToPKPiMin": "0."
         }
     },

@@ -4,7 +4,7 @@
 # Input specification for runtest.sh
 # (Modifies input parameters.)
 
-INPUT_CASE=9            # Input case
+INPUT_CASE=12           # Input case
 
 NFILESMAX=-0            # Maximum number of processed input files. (Set to -0 to process all; to -N to process all but the last N files.)
 
@@ -86,18 +86,18 @@ case $INPUT_CASE in
     JSON="$JSONRUN5_HF"
     ISINPUTO2=1
     ISMC=1;;
-  8)
+  11)
 	  INPUT_LABEL="Lc dedicated"
 	  INPUT_DIR="/home/mmazzill/pp14TeV_ccbarLcpKpi_10M_sc2_26032021"
 	  INPUT_FILES="AODRun5.*.root"
-	  JSON="$JSONRUN5"
+	  JSON="$JSONRUN5_HF"
 	  ISINPUTO2=1
 	  ISMC=1;;
-  9)
+  12)
 	  INPUT_LABEL="Xic dedicated"
-	  INPUT_DIR="/home/aalkin/xic_2"
+	  INPUT_DIR="/home/aalkin/xic_10M"
 	  INPUT_FILES="AODRun5.*.root"
-	  JSON="$JSONRUN5"
+	  JSON="$JSONRUN5_HF"
 	  ISINPUTO2=1
 	  ISMC=1;;
 esac

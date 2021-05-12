@@ -93,9 +93,9 @@ def efficiencyhadron(had, var):
     ceffhf.Divide(2, 1)
     gPad.SetLogy()
     # hnum = fileo2.Get("qa-tracking-efficiency-%s/%s/num" % (had, var))
-    hnum = fileo2.Get("hf-task-%s-mc/h%sRecSig" % (had, var))
+    hnum = fileo2.Get("hf-task-%s-m-c/h%sRecSig" % (had, var))
     # hden = fileo2.Get("qa-tracking-efficiency-%s/%s/den" % (had, var))
-    hden = fileo2.Get("hf-task-%s-mc/h%sGen" % (had, var))
+    hden = fileo2.Get("hf-task-%s-m-c/h%sGen" % (had, var))
     hnum.Rebin(4)
     hden.Rebin(4)
     eff = TEfficiency(hnum, hden)
@@ -104,10 +104,10 @@ def efficiencyhadron(had, var):
 
 
 var_list = ["Pt", "Eta", "Phi"]
-hfhadron_list = ["d0", "dplus", "lc", "xic", "jpsi"]
+hfhadron_list =["xic"] # ["d0", "dplus", "lc", "xic", "jpsi"]
 
-for var in var_list:
-    efficiencytracking(var)
+#for var in var_list:
+#    efficiencytracking(var)
 
 for had in hfhadron_list:
     efficiencyhadron(had, "Pt")
