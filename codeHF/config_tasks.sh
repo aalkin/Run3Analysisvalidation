@@ -34,7 +34,7 @@ DOO2_QA_SIM=0       # qa-simple
 DOO2_MC_VALID=0     # hf-mc-validation
 # PID
 DOO2_PID_TPC=0      # pid-tpc-full
-DOO2_PID_TOF=0      # pid-tof-full
+DOO2_PID_TOF=1      # pid-tof-full
 DOO2_PID_TOF_QA=0   # pid-tof-qa-mc
 # Vertexing
 DOO2_SKIM=0         # hf-track-index-skims-creator
@@ -45,14 +45,14 @@ DOO2_CAND_XICC=0    # hf-candidate-creator-xicc
 DOO2_SEL_D0=0       # hf-d0-candidate-selector
 DOO2_SEL_DPLUS=0    # hf-dplus-topikpi-candidate-selector
 DOO2_SEL_LC=0       # hf-lc-candidate-selector
-DOO2_SEL_XIC=0      # hf-xic-topkpi-candidate-selector
+DOO2_SEL_XIC=1      # hf-xic-topkpi-candidate-selector
 DOO2_SEL_JPSI=0     # hf-jpsi-toee-candidate-selector
-DOO2_TASK_XICC=0    # hf-task-xicc
+DOO2_TASK_XICC=1    # hf-task-xicc
 # User tasks
 DOO2_TASK_D0=1      # hf-task-d0
 DOO2_TASK_DPLUS=0   # hf-task-dplus
 DOO2_TASK_LC=0      # hf-task-lc
-DOO2_TASK_XIC=0     # hf-task-xic
+DOO2_TASK_XIC=1     # hf-task-xic
 DOO2_TASK_JPSI=0    # hf-task-jpsi
 DOO2_TASK_BPLUS=0   # hf-task-bplus
 DOO2_TASK_X=0       # hf-task-x
@@ -64,7 +64,7 @@ DOO2_TREE_LC=0      # hf-tree-creator-lc-topkpi
 APPLYCUTS_D0=0      # Apply D0 selection cuts.
 APPLYCUTS_DPLUS=0   # Apply D+ selection cuts.
 APPLYCUTS_LC=0      # Apply Λc selection cuts.
-APPLYCUTS_XIC=0     # Apply Ξc selection cuts.
+APPLYCUTS_XIC=1     # Apply Ξc selection cuts.
 APPLYCUTS_XICC=0    # Apply Ξcc selection cuts.
 APPLYCUTS_JPSI=0    # Apply J/ψ selection cuts.
 

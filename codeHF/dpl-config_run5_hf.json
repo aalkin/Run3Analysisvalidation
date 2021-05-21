@@ -237,16 +237,16 @@
     "hf-xic-topkpi-candidate-selector": {
         "d_pTCandMin": "0.",
         "d_pTCandMax": "36.",
-        "d_FilterPID": "false",
+        "d_FilterPID": "true",
         "d_pidTPCMinpT": "0.15",
         "d_pidTPCMaxpT": "1.0",
-        "d_pidTOFMinpT": "0.5",
-        "d_pidTOFMaxpT": "4.0",
+        "d_pidTOFMinpT": "0.15",
+        "d_pidTOFMaxpT": "1.5",
         "d_TPCNClsFindablePIDCut": "70.",
         "d_nSigmaTPC": "3.",
         "d_nSigmaTPCCombined": "5.",
-        "d_nSigmaTOF": "3.",
-        "d_nSigmaTOFCombined": "5."
+        "d_nSigmaTOF": "5.",
+        "d_nSigmaTOFCombined": "5.",
         "ptBins": {
             "values": [
                 "0",
