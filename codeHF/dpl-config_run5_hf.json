@@ -23,7 +23,7 @@
                 "100."
             ]
         },
-        "etamax_2prong": "1.44",
+        "etamax_2prong": "4.0",
         "cuts_singletrack_2prong": {
             "values": [
                 ["0.001", "1.0"],
@@ -35,7 +35,7 @@
             ]
         },
         "ptmintrack_3prong": ".3",
-        "etamax_3prong": "1.44",
+        "etamax_3prong": "4.0",
         "cuts_singletrack_3prong": {
             "values": [
                 ["0.001", "1.0"],
@@ -83,7 +83,7 @@
             "mInvMassDsToPiKKMax": "2.18",
             "mCPADsToPiKKMin": "0.94",
             "mDecLenDsToPiKKMin": "0.02",
-            "mPtXicToPKPiMin": "4.",
+            "mPtXicToPKPiMin": "1.",
             "mInvMassXicToPKPiMin": "2.10",
             "mInvMassXicToPKPiMax": "2.80",
             "mCPAXicToPKPiMin": "-2.",
@@ -238,15 +238,15 @@
         "d_pTCandMin": "0.",
         "d_pTCandMax": "36.",
         "d_FilterPID": "true",
-        "d_pidTPCMinpT": "0.15",
-        "d_pidTPCMaxpT": "1.0",
+        "d_pidTPCMinpT": "99999",
+        "d_pidTPCMaxpT": "9999999",
         "d_pidTOFMinpT": "0.15",
-        "d_pidTOFMaxpT": "1.5",
+        "d_pidTOFMaxpT": "5.0",
         "d_TPCNClsFindablePIDCut": "70.",
-        "d_nSigmaTPC": "3.",
-        "d_nSigmaTPCCombined": "5.",
-        "d_nSigmaTOF": "5.",
-        "d_nSigmaTOFCombined": "5.",
+        "d_nSigmaTPC": "99999.",
+        "d_nSigmaTPCCombined": "999999.",
+        "d_nSigmaTOF": "3.",
+        "d_nSigmaTOFCombined": "3.",
         "ptBins": {
             "values": [
                 "0",
@@ -396,6 +396,14 @@
     "hf-task-xic-mc": {
         "cutEtaCandMax": "0.8",
         "d_selectionFlagXic": "0"
+    },
+    "hf-task-xicc": {
+        "cutYCandMax": "2.0",
+        "d_selectionFlagXicc": "0"
+    },
+    "hf-task-xicc-mc": {
+        "cutYCandMax": "2.0",
+        "d_selectionFlagXicc": "0"
     },
     "hf-task-jpsi": {
         "cutYCandMax": "1.44",
