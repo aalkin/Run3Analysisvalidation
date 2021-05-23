@@ -108,6 +108,18 @@
         "d_minrelchi2change": "0.9",
         "b_dovalplots": "true"
     },
+    "hf-cand-creator-xicc": {
+        "d_bz": "5",
+        "b_propdca": "true",
+        "d_maxr": "200",
+        "d_maxdzini": "4",
+        "d_minparamchange": "0.001",
+        "d_minrelchi2change": "0.9",
+        "b_dovalplots": "true",
+        "d_selectionFlagXic": "1",
+        "cutYCandMax": "1.0",
+        "cutPtPionMin": "1.0"
+    },
     "hf-d0-candidate-selector": {
         "d_pTCandMin": "0.",
         "d_pTCandMax": "50.",
