@@ -91,7 +91,7 @@ def efficiencyhadron(had, var):
     ceffhf = TCanvas("ceffhf", "A Simple Graph Example")
     ceffhf.SetCanvasSize(1500, 700)
     ceffhf.Divide(2, 1)
-    #gPad.SetLogy()
+    # gPad.SetLogy()
     # hnum = fileo2.Get("qa-tracking-efficiency-%s/%s/num" % (had, var))
     hnum = fileo2.Get("hf-task-%s-mc/h%sRecSig" % (had, var))
     # hden = fileo2.Get("qa-tracking-efficiency-%s/%s/den" % (had, var))
@@ -106,7 +106,7 @@ def efficiencyhadron(had, var):
 var_list = ["Pt", "Eta"]
 hfhadron_list = ["xic", "xicc"]
 
-#for var in var_list:
+# for var in var_list:
 #    efficiencytracking(var)
 
 for had in hfhadron_list:

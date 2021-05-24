@@ -126,6 +126,4 @@ def makePlots(
 # variables = ["d0Prong0", "d0Prong1", "d0Prong2", "PtProng0", "PtProng1", "PtProng2", "CPA", "Eta", "Declength"]
 variables = ["mass"]
 
-makePlots(
-    "AnalysisResults_O2_enriched.root", "AnalysisResults_O2_MB.root", *variables
-)
+makePlots("AnalysisResults_O2_enriched.root", "AnalysisResults_O2_MB.root", *variables)
