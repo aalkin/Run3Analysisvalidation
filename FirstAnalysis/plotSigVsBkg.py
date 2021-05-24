@@ -34,7 +34,7 @@ def makePlots(
     filePathSig="AnalysisResults_O2.root",
     filePathBkg="AnalysisResults_O2.root",
     *vars,
-    hadron="x",
+    hadron="xicc",
     normalized=True,
     rebin=1,
 ):
@@ -51,8 +51,8 @@ def makePlots(
     fileBkg = TFile(filePathBkg)
     gStyle.SetOptStat(0)
     for var in vars:
-        hsig = fileSig.Get(f"hf-task-{hadron}-mc/h{var}RecSig")
-        hbkg = fileBkg.Get(f"hf-task-{hadron}-mc/h{var}RecBg")
+        hsig = fileSig.Get(f"hf-task-{hadron}-mc/h{var}Sig")
+        hbkg = fileBkg.Get(f"hf-task-{hadron}-mc/h{var}Bg")
         if type(hsig) != type(hbkg):
             print(
                 f"Error: histograms are not of the same type! Skipping variable {var}..."
@@ -124,8 +124,8 @@ def makePlots(
 # (so you don't fill your terminal with errors if something goes wrong within the loop :))
 
 # variables = ["d0Prong0", "d0Prong1", "d0Prong2", "PtProng0", "PtProng1", "PtProng2", "CPA", "Eta", "Declength"]
-variables = ["CPA"]
+variables = ["mass"]
 
 makePlots(
-    "AnalysisResults_O2_Signal.root", "AnalysisResults_O2_Background.root", *variables
+    "AnalysisResults_O2_enriched.root", "AnalysisResults_O2_MB.root", *variables
 )

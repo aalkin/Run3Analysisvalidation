@@ -20,7 +20,7 @@ def efficiencytracking(var):
     ]
     color_list = [1, 2, 4, 6, 8]
     marker_list = [20, 21, 22, 34, 45]
-    fileo2 = TFile("../codeHF/AnalysisResults_O2.root")
+    fileo2 = TFile("AnalysisResults_O2.root")
 
     c1 = TCanvas("c1", "Efficiency")
     gStyle.SetOptStat(0)
@@ -91,23 +91,23 @@ def efficiencyhadron(had, var):
     ceffhf = TCanvas("ceffhf", "A Simple Graph Example")
     ceffhf.SetCanvasSize(1500, 700)
     ceffhf.Divide(2, 1)
-    gPad.SetLogy()
+    #gPad.SetLogy()
     # hnum = fileo2.Get("qa-tracking-efficiency-%s/%s/num" % (had, var))
     hnum = fileo2.Get("hf-task-%s-mc/h%sRecSig" % (had, var))
     # hden = fileo2.Get("qa-tracking-efficiency-%s/%s/den" % (had, var))
     hden = fileo2.Get("hf-task-%s-mc/h%sGen" % (had, var))
-    hnum.Rebin(4)
-    hden.Rebin(4)
+    hnum.Rebin(10)
+    hden.Rebin(10)
     eff = TEfficiency(hnum, hden)
     eff.Draw()
     saveCanvas(ceffhf, "efficiency_hfcand%s%s" % (had, var))
 
 
-var_list = ["Pt", "Eta", "Phi"]
-hfhadron_list = ["d0", "dplus", "lc", "xic", "jpsi"]
+var_list = ["Pt", "Eta"]
+hfhadron_list = ["xic", "xicc"]
 
-for var in var_list:
-    efficiencytracking(var)
+#for var in var_list:
+#    efficiencytracking(var)
 
 for had in hfhadron_list:
     efficiencyhadron(had, "Pt")
