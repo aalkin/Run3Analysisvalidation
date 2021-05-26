@@ -29,14 +29,14 @@ MAKE_GRAPH=0        # Make topology graph.
 
 # Activation of O2 workflows
 # Event selection
-DOO2_EVSEL=0        # event-selection and timestamp
+DOO2_EVSEL=1        # event-selection and timestamp
 # QA
 DOO2_QA_EFF=0       # qa-efficiency
 DOO2_QA_SIM=0       # qa-simple
 DOO2_MC_VALID=0     # hf-mc-validation
 # PID
-DOO2_PID_TPC=0      # pid-tpc-full
-DOO2_PID_TOF=0      # pid-tof-full
+DOO2_PID_TPC=1      # pid-tpc-full
+DOO2_PID_TOF=1      # pid-tof-full
 DOO2_PID_TOF_QA=0   # pid-tof-qa-mc
 # Vertexing
 DOO2_SKIM=0         # hf-track-index-skims-creator
@@ -49,7 +49,7 @@ DOO2_SEL_LC=0       # hf-lc-candidate-selector
 DOO2_SEL_XIC=1      # hf-xic-topkpi-candidate-selector
 DOO2_SEL_JPSI=0     # hf-jpsi-toee-candidate-selector
 # User tasks
-DOO2_TASK_D0=1      # hf-task-d0
+DOO2_TASK_D0=0      # hf-task-d0
 DOO2_TASK_DPLUS=0   # hf-task-dplus
 DOO2_TASK_LC=0      # hf-task-lc
 DOO2_TASK_XIC=1     # hf-task-xic

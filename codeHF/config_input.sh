@@ -86,18 +86,11 @@ case $INPUT_CASE in
     JSON="$JSONRUN5_HF"
     ISINPUTO2=1
     ISMC=1;;
-  11)
-	  INPUT_LABEL="Lc dedicated"
-	  INPUT_DIR="/home/mmazzill/pp14TeV_ccbarLcpKpi_10M_sc2_26032021"
-	  INPUT_FILES="AODRun5.*.root"
-	  JSON="$JSONRUN5_HF"
-	  ISINPUTO2=1
-	  ISMC=1;;
   12)
-	  INPUT_LABEL="Xic dedicated"
-	  INPUT_DIR="/home/aalkin/xic_10M"
-	  INPUT_FILES="AODRun5.*.root"
-	  JSON="$JSONRUN5_HF"
-	  ISINPUTO2=1
-	  ISMC=1;;
+    INPUT_LABEL="Xic dedicated"
+    INPUT_DIR="/home/aalkin/xic_10M"
+    INPUT_FILES="AODRun5.*.root"
+    JSON="$JSONRUN5_HF"
+    ISINPUTO2=1
+    ISMC=1;;
 esac
